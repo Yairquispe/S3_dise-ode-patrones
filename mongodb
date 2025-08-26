@@ -1,0 +1,8 @@
+public class mongodatabase implements database{
+
+    @Override
+    public void saveorder(String order) {
+        System.out.println("guardando pedido en mongodb"+order);
+    }
+    
+}
