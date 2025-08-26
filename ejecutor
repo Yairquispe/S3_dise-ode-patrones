@@ -1,0 +1,15 @@
+public class ejecutor {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        orderservice ser1 = new orderservice(new msqldatabase());
+        ser1.procesarorder("pedido 001");
+        orderservice ser2 = new orderservice(new mongodatabase()); 
+        ser2.procesarorder("pedido 002");
+
+    }
+    
+    
+}
