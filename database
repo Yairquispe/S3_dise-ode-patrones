@@ -1,0 +1,6 @@
+//orderservices  es un modulo de alto nivel depende directamente 
+//de mysqldatabase(modulo de bajo nivel)
+public interface database {
+    void saveorder(String order );
+    
+}
