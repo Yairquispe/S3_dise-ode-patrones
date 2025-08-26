@@ -1,0 +1,13 @@
+
+//orderservice ahora depende de la abstracion 
+public class orderservice {
+    private database db;
+    public orderservice(database db){
+        this.db= db;
+        
+    }
+    public void procesarorder(String order){
+        db.saveorder(order);
+        
+    }
+}
